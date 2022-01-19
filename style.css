@@ -7,7 +7,7 @@ body {
   line-height: 1.8em;
   padding: 50px;
   box-sizing: border-box;
-  color: rgb(151, 98, 98);
+  color: rgb(136, 12, 8);
 }
 body,
 html {
@@ -17,7 +17,7 @@ html {
 .wrapper {
   box-sizing: border-box;
   border-radius: 30px;
-  background: rgb(23, 49, 83);
+  background: rgb(5, 28, 51);
   box-shadow: 10px 15px 10px #000;
   /*box-shadow: 5px 10px 10px #333;*/
   height: 100%;
@@ -25,43 +25,60 @@ html {
 }
 
 a {
-  color: rgb(92, 96, 100);
+  color: rgb(175, 175, 175);
   text-decoration: none;
   /*border-bottom: 1px solid #ccff26;*/
 }
 a:hover {
   border-bottom: 1px solid #a39244;
-  color: rgb(148, 82, 63);
+  color: rgb(105, 41, 22);
 }
 p {
   font-weight: 200;
   font-size: 20px;
 }
 
-.name {
+.title {
+  color: rgb(167, 16, 11);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
-  padding-bottom: 20px;
-}
+  padding-bottom: 10px;
+  }
+  .response {
+    color: rgb(167, 16, 11);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    }
+  
 
 .container {
   margin: 0 auto;
   width: 900px;
   height: 600px;
   padding: 80px 12px;
-  overflow: auto;
+    overflow: auto;
 }
 
+.linux_less input[type='text'],
+[type='email']{
+  background: rgb(5, 28, 51);
+  color: rgb(172, 16, 11);
+  width: 80%;
+  padding: 7px;
+  font-size: 14px;
+}
 .meta {
   text-transform: uppercase;
   font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.15em;
 }
 .meta a:hover {
   border-bottom: 1px solid #a39244;
-  color: rgb(148, 82, 63);
+  color: rgb(170, 99, 42);
 }
 
 .inline-list {
@@ -82,4 +99,21 @@ footer {
   bottom: 0px;
   padding: 40px 0;
   width: 800px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px){
+  body{
+      background-color: lightslategray;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px)
+and (max-width: 960px){
+  width: 50%;
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px){
+  width: 33.3%;
 }
