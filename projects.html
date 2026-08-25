@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Greg Costa - browser extensions and tools.">
+  <title>Projects | Greg Costa</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="intro.html" class="logo">Greg Costa</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="intro.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="intro.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Projects</h1>
+      <p>A showcase of things I've built.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <ul id="projects-list" class="projects-grid">
+          <li class="project-item">
+            <h3>Browser Extensions</h3>
+            <div class="carousel-container">
+              <div class="carousel-slide">
+                <img class="image" src="icons/git_essentials_512.png" alt="Git Essentials icon">
+              </div>
+              <div class="carousel-slide">
+                <img src="icons/GitEssentialsv2_search.png" alt="Git Essentials - search">
+              </div>
+              <div class="carousel-slide">
+                <img src="icons/GitEssentialsv2_add_edit.png" alt="Git Essentials - add/edit command">
+              </div>
+              <div class="carousel-slide">
+                <img src="icons/GitEssentialsv2_pagination.png" alt="Git Essentials - pagination">
+              </div>
+              <div class="carousel-slide">
+                <img src="icons/GitEssentialsv2_command_pagination.png" alt="Git Essentials - command pagination">
+              </div>
+              <div class="carousel-slide">
+                <img src="icons/GitEssentialsv2_settings.png" alt="Git Essentials - settings">
+              </div>
+              <button class="prev-btn" onclick="prevSlide(this.parentNode)">&#10094;</button>
+              <button class="next-btn" onclick="nextSlide(this.parentNode)">&#10095;</button>
+            </div>
+            <a href="https://chromewebstore.google.com/detail/kcmmlppfngfojapfgbgchfdoegnkgbfh?utm_source=item-share-cb"
+              target="_blank">Git Essentials: View on Chrome Web Store</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Greg Costa</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
